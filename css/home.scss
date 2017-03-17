@@ -1,0 +1,22 @@
+@import 'recursos/variables.scss';
+@import 'header.scss';
+@import 'home-full.scss';
+@import 'month.scss';
+@import 'footer.scss';
+@import 'recursos/steps-styles.scss';
+@import 'recursos/general.scss';
+@import 'recursos/font-awesome.css';
+@import 'recursos/responsive.scss';
+
+html,body{
+	position: relative;
+	min-height: 100vh;
+}
+body{
+	padding-bottom: 30px !important;
+}
+@media(min-width: 640px){
+	body{
+		padding-bottom: 1px !important;
+	}
+}

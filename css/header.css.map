@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,cAAe,CCAX,SAAS,CDCW,MAAM,CCA1B,KAAK,CDAU,GAAG,CAClB,MAAM,CAAE,IAAI",
+"sources": ["header.scss","recursos/variables.scss"],
+"names": [],
+"file": "header.css"
+}

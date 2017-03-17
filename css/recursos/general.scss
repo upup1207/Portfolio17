@@ -1,0 +1,273 @@
+.dgt-container {
+    @include ancho(90%, 1450px);
+    margin: 20px auto;
+    .block-a{
+    	>img{
+				width: 100%;
+    	}
+    }
+}
+.btn-flex{
+	text-transform: uppercase;
+	border:1px solid transparent;
+	border-radius: 3px 3px 3px 3px;
+	display: -ms-flexbox;
+	display: flex;
+  display: -webkit-flex;
+  display: -webkit-box;
+	-ms-flex-align:center;
+	    -webkit-box-align:center;
+	        align-items:center;
+	-ms-flex-pack: center;
+	    -webkit-box-pack: center;
+	        justify-content: center;
+	height: 40px;
+	width:200px;
+	color:#fff;
+	font-family: $fontopensemi;
+}
+.flex-bold{
+	font-family: $fontopensemi;
+	color:$colorweb;
+	>span{
+		font-family: $fontopenlight;
+	}
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+	background: $colorweb !important;
+}
+
+/*.buzz{
+	display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.buzz:hover,.buzz:focus,.buzz:active{
+	-webkit-animation-name: hvr-buzz-out;
+	animation-name: hvr-buzz-out;
+	-webkit-animation-duration: 0.75s;
+	animation-duration: 0.75s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}*/
+/*KEYFRAME ELECTRONIC START TRIAL */ 
+
+.biliboard {
+	text-align: center;
+	position: relative;
+	transition:all .35s ease;	
+}
+.biliboard:before {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	border-radius: 3px;
+	transform: scale( 1.02, 1.08 );
+	position: absolute;
+	background-position: 70px 0;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.biliboard:hover{
+	background-color: #FFF !important;
+	color:$colorpink !important;
+	&:before {
+		background: radial-gradient( $colorpink, $colorpink, $colorpink, $colorpink, #fafafa, #fafafa ) no-repeat;
+		background-size: 150px 50px;
+		animation: electronic 2s infinite linear;
+	}
+}
+.biliboard-cg:hover{
+	background-color: #FFF !important;
+	color:$colorweb !important;
+	&:before {
+		background: radial-gradient( $colorweb, $colorweb, $colorweb, $colorweb, #fafafa, #fafafa ) no-repeat;
+		background-size: 150px 50px;
+		animation: electronic 2s infinite linear;
+	}
+}
+#navigation-ul .biliboard-start{
+	transition:all 0.3s ease;
+	  &:before,
+	  &:after {
+	    box-sizing: border-box;
+	    content: '';
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	  }
+	    transition: color 0.25s;
+
+	  &:before,
+	  &:after {
+	    border: 2px solid transparent; // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+	    width: 0;
+	    height: 0;
+	  }
+
+	  // This covers the top & right borders (expands right, then down)
+	  &:before {
+	    top: 0;
+	    left: 0;
+	  }
+
+	  // And this the bottom & left borders (expands left, then up)
+	  &:after {
+	    bottom: 0;
+	    right: 0;
+	  }
+	  
+	  &:hover {
+	    color: $colorpink;
+	    background-color:#fff;
+	  }
+	  // Hover styles
+	  &:hover{
+	  	&:before,&:after{
+	    width: 100%;
+	    height: 100%;
+		  }
+		}
+	  &:hover:before {
+	    border-top-color: $colorpink; // Make borders visible
+	    border-right-color: $colorpink;
+	    transition:
+	      width 0.25s ease-out, // Width expands first
+	      height 0.25s ease-out 0.25s; // And then height
+	  }
+
+	  &:hover:after {
+	    border-bottom-color: $colorpink; // Make borders visible
+	    border-left-color: $colorpink;
+	    transition:
+	      border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+	      width 0.25s ease-out 0.5s, // And then exanding width
+	      height 0.25s ease-out 0.75s; // And finally height
+	  }
+}
+
+
+@-webkit-keyframes electronic {
+	
+	0%, 100% {
+		background-position: 20px -30px;
+	}
+	25% {
+		background-position: 150px 5px;
+	}
+	50% {
+		background-position: 20px 40px;
+	}
+	75% {
+		background-position: -100px 5px;
+	}
+	
+}
+	
+@keyframes electronic {
+	
+	0%, 100% {
+		background-position: 20px -30px;
+	}
+	25% {
+		background-position: 200px 5px;
+	}
+	50% {
+		background-position: 20px 40px;
+	}
+	75% {
+		background-position: -100px 5px;
+	}
+	
+}
